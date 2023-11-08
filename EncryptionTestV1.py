@@ -10,6 +10,7 @@ client.connect(addr)
 print(f"Connected at {addr[0]}/{addr[1]}")
 flag = True
 while flag:
+    #receive key over here
     msg = input("> ")
     #encrypt here
     client.send(msg.encode('utf-32'))
