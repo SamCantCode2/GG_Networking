@@ -12,6 +12,7 @@ def clientthread(conn, addr):
     print(f"New connection: {addr[0]}/{addr[1]}")
     flag = True
     while flag:
+        #send public keys here
         msg = conn.recv(1024).decode('utf-32')
         #decrypt here
         if msg == dc:
